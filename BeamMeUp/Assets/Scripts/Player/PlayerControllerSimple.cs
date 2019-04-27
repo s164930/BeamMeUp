@@ -8,9 +8,12 @@ public class PlayerControllerSimple : MonoBehaviour
     public float moveTime = 0.1f;
     public CapsuleCollider groundCheck;
     public Animator animator;
+    public GameObject cube;
     private Rigidbody rb;
 	public LevelManager levelManager;
     private float inverseTime;
+    private Stack<Vector3> prevPos;
+    private Stack<Vector3> prevCube;
 
     private float startTime;
 
@@ -21,9 +24,19 @@ public class PlayerControllerSimple : MonoBehaviour
         inverseTime = 1f / moveTime;
         startTime = Time.time;
 		levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        prevPos = new Stack<Vector3>();
+        prevCube = new Stack<Vector3>();
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            levelManager.ResetLevel();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RedoAction();
+        }
         int vertical = 0;
         int horizontal = 0;
 
@@ -86,6 +99,7 @@ public class PlayerControllerSimple : MonoBehaviour
     {
         animator.SetBool("isWalking", true);
         Vector3 start = transform.position;
+        prevPos.Push(start);
 
         Vector3 end = start + new Vector3(xDir, yDir, zDir);
         Vector3 lookAtThis = start - new Vector3(xDir, yDir, zDir);
@@ -96,10 +110,20 @@ public class PlayerControllerSimple : MonoBehaviour
         StartCoroutine(SmoothMovement(end));
     }
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.GetComponent<Rigidbody>() != null)
+        {
+            
+        }
+    }
+    private bool enableGravity = true;
     private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<Rigidbody>() != null)
         {
+            prevCube.Push(other.transform.position);
             other.GetComponent<Rigidbody>().isKinematic = false;
             other.GetComponent<Rigidbody>().useGravity = true;
         }
@@ -121,6 +145,17 @@ public class PlayerControllerSimple : MonoBehaviour
             }
         }
 
+    }
+
+    public void RedoAction()
+    {
+        groundCheck.enabled = false;
+        if (prevCube.Count != 0)
+        {
+            Instantiate(cube, prevCube.Pop(), cube.transform.rotation);
+        }
+        transform.position = prevPos.Pop();
+        groundCheck.enabled = true;
     }
 
 }

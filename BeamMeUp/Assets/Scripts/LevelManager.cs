@@ -14,12 +14,6 @@ public class LevelManager : MonoBehaviour
         startBlock = GameObject.FindGameObjectWithTag("StartBlock");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ReachedEnd(){
         points++;
         if(points >= pointsToWin){
@@ -29,5 +23,11 @@ public class LevelManager : MonoBehaviour
             return;
         }
         startBlock.GetComponent<StartBlock>().SpawnPlayer();
+    }
+
+    public void ResetLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        sceneFader.ChangeScene(scene.name);
     }
 }

@@ -101,6 +101,7 @@ MonoBehaviour:
   moveTime: 0.44
   groundCheck: {fileID: 6174260605910412054}
   animator: {fileID: 6035261287257182848}
+  cube: {fileID: 1833086062157998, guid: 0ac90a12d2dde4072a660aee99d21e6a, type: 3}
   levelManager: {fileID: 0}
 --- !u!1 &6035261287249797450
 GameObject:
@@ -115,7 +116,7 @@ GameObject:
   - component: {fileID: 6035261287247806344}
   m_Layer: 8
   m_Name: Body.002
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,7 +198,7 @@ GameObject:
   - component: {fileID: 6035261287247806346}
   m_Layer: 8
   m_Name: Wheel.002
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,7 +276,7 @@ GameObject:
   - component: {fileID: 6035261287247806348}
   m_Layer: 8
   m_Name: Wing.L.002
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +355,7 @@ GameObject:
   - component: {fileID: 6035261287247806350}
   m_Layer: 8
   m_Name: Wing.R.002
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -432,7 +433,7 @@ GameObject:
   - component: {fileID: 6035261287247806352}
   m_Layer: 8
   m_Name: Body.003
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +509,7 @@ GameObject:
   - component: {fileID: 6174260605910412054}
   m_Layer: 8
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
