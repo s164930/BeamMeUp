@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class StartBlock : MonoBehaviour
 {
+
+    public GameObject player;
+    private Transform grid;
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Awake(){
+        grid = transform.parent;
+        Instantiate(player, transform.position + new Vector3(0,1f,0), Quaternion.identity, grid);    
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void SpawnPlayer(){
+        Instantiate(player, transform.position + new Vector3(0,1f,0), Quaternion.identity, grid);    
     }
+
+    
 }
