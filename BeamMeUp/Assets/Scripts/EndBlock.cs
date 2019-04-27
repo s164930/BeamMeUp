@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class EndBlock : MonoBehaviour
 {
-    // Update is called once per frame
+    public GameObject particleEffect;
+    public StartBlock startBlock;
+    public void Explode()
+    {
+        startBlock.Explode();
+        Instantiate(particleEffect, transform.position, particleEffect.transform.rotation);
+    }
     
 }

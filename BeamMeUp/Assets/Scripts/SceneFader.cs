@@ -18,6 +18,21 @@ public class SceneFader : MonoBehaviour
         StartCoroutine(FadeOut(scene));
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(SceneManager.GetActiveScene().name == "LevelSelect")
+            {
+                ChangeScene("MainMenu");
+            }
+            else
+            {
+                ChangeScene("LevelSelect");
+            }
+        }
+    }
+
     IEnumerator FadeIn()
     {
         float t = 1f;

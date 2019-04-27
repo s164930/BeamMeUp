@@ -29,10 +29,7 @@ public class PlayerControllerSimple : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            levelManager.ResetLevel();
-        }
+        
         if (Input.GetKeyDown(KeyCode.R))
         {
             RedoAction();
@@ -83,7 +80,7 @@ public class PlayerControllerSimple : MonoBehaviour
     {
         float sqrRemainingDistance = (transform.position - end).sqrMagnitude;
 
-        while (sqrRemainingDistance > 0.00001)
+        while (sqrRemainingDistance > 0.001)
         {
             Vector3 newPosition = Vector3.MoveTowards(transform.position, end, inverseTime * Time.deltaTime);
             rb.MovePosition(newPosition);
@@ -113,9 +110,9 @@ public class PlayerControllerSimple : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<Rigidbody>() != null)
+        if(other.gameObject.tag == "EndBlock")
         {
-            
+            other.gameObject.GetComponent<EndBlock>().Explode();
         }
     }
     private bool enableGravity = true;

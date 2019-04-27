@@ -14,12 +14,20 @@ public class LevelManager : MonoBehaviour
         startBlock = GameObject.FindGameObjectWithTag("StartBlock");
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            ResetLevel();
+        }
+    }
     public void ReachedEnd(){
         points++;
         if(points >= pointsToWin){
             Debug.Log("You have won");
             //int scene = SceneManager.GetSceneByName("MainMenu").buildIndex;
-            sceneFader.ChangeScene("MainMenu");
+            sceneFader.ChangeScene("LevelSelect");
+            points = 0;
             return;
         }
         startBlock.GetComponent<StartBlock>().SpawnPlayer();

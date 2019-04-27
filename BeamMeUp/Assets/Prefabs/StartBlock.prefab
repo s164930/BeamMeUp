@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1824954320318773697}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.5, y: 0.05, z: -9}
-  m_LocalScale: {x: 100, y: 100.00239, z: 100.00239}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6035261287249797442, guid: 158a0845f3fd39bc6bf3c3c0e8ce5497, type: 3}
+  particleEffect: {fileID: 7411080047023210051, guid: a070c37646b394241927d4fa5d428525,
+    type: 3}
 --- !u!65 &1854539647434377037
 BoxCollider:
   m_ObjectHideFlags: 0
