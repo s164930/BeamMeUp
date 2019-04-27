@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 37c6ad404240a7247824af29b46efb0f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: //RootNode
+    100004: Wheel
+    100006: Wing.L
+    100008: Wing.R
+    100010: Body.002
+    100012: Wheel.002
+    100014: Wing.L.002
+    100016: Wing.R.002
+    100018: Body.003
+    400000: Body
+    400002: //RootNode
+    400004: Wheel
+    400006: Wing.L
+    400008: Wing.R
+    400010: Body.002
+    400012: Wheel.002
+    400014: Wing.L.002
+    400016: Wing.R.002
+    400018: Body.003
+    2100000: Red
+    2100002: Blue
+    2100004: Bottom
+    2100006: Emissive.yellow
+    2100008: Deak
+    2300000: Body
+    2300002: Wheel
+    2300004: Wing.L
+    2300006: Wing.R
+    2300008: Body.002
+    2300010: Wheel.002
+    2300012: Wing.L.002
+    2300014: Wing.R.002
+    2300016: Body.003
+    3300000: Body
+    3300002: Wheel
+    3300004: Wing.L
+    3300006: Wing.R
+    3300008: Body.002
+    3300010: Wheel.002
+    3300012: Wing.L.002
+    3300014: Wing.R.002
+    3300016: Body.003
+    4300000: Body
+    4300002: Wing.L
+    4300004: Wing.R
+    4300006: Wheel
+    4300008: Body.002
+    4300010: Wing.L.002
+    4300012: Wing.R.002
+    4300014: Wheel.002
+    4300016: Body.003
+    7400000: Body|BodyAction
+    7400002: Body|BodyAction.001
+    7400004: Body|WheelAction
+    7400006: Body|WheelAction.001
+    7400008: Body|Wing.LAction
+    7400010: Body|Wing.LAction.001
+    7400012: Wheel|BodyAction
+    7400014: Wheel|BodyAction.001
+    7400016: Wheel|WheelAction
+    7400018: Wheel|WheelAction.001
+    7400020: Wheel|Wing.LAction
+    7400022: Wheel|Wing.LAction.001
+    7400024: Wing.L|BodyAction
+    7400026: Wing.L|BodyAction.001
+    7400028: Wing.L|WheelAction
+    7400030: Wing.L|WheelAction.001
+    7400032: Wing.L|Wing.LAction
+    7400034: Wing.L|Wing.LAction.001
+    7400036: Body|Walk
+    7400038: Body.002|BodyAction.001
+    7400040: Body.002|BodyAction.002
+    7400042: Body.002|WheelAction
+    7400044: Body.002|WheelAction.001
+    7400046: Body.002|WheelAction.002
+    7400048: Body.002|Wing.LAction
+    7400050: Body.002|Wing.LAction.001
+    7400052: Body.002|Wing.LAction.002
+    7400054: Wheel.002|BodyAction
+    7400056: Wheel.002|BodyAction.001
+    7400058: Wheel.002|BodyAction.002
+    7400060: Wheel|Walk
+    7400062: Wheel.002|WheelAction.001
+    7400064: Wheel.002|WheelAction.002
+    7400066: Wheel.002|Wing.LAction
+    7400068: Wheel.002|Wing.LAction.001
+    7400070: Wheel.002|Wing.LAction.002
+    7400072: Wing.L.002|BodyAction
+    7400074: Wing.L.002|BodyAction.001
+    7400076: Wing.L.002|BodyAction.002
+    7400078: Wing.L.002|WheelAction
+    7400080: Wing.L.002|WheelAction.001
+    7400082: Wing.L.002|WheelAction.002
+    7400084: Wings|Walk
+    7400086: Wing.L.002|Wing.LAction.001
+    7400088: Wing.L.002|Wing.LAction.002
+    7400090: Idle
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue
+    second: {fileID: 2100000, guid: e4d63bdcc59c928468d6d766544aec5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottom
+    second: {fileID: 2100000, guid: 3dd3086a9fa08b1438de2491632e5a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Deak
+    second: {fileID: 2100000, guid: cc8462d4ae4a785428a7ebddb8fe29bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emissive.yellow
+    second: {fileID: 2100000, guid: ecffa431435167c4a87f916acb249e09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: 670bb3c1c3c0a6c4abcb20df460d589d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Body|Walk
+      takeName: Body.002|BodyAction
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Wheel|Walk
+      takeName: Wheel.002|WheelAction
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Wings|Walk
+      takeName: Wing.L.002|Wing.LAction
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Body.002|BodyAction
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

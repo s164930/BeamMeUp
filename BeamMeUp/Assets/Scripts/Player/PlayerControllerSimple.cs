@@ -7,6 +7,7 @@ public class PlayerControllerSimple : MonoBehaviour
 
     public float moveTime = 0.1f;
     public CapsuleCollider groundCheck;
+    public Animator animator;
     private Rigidbody rb;
 	public LevelManager levelManager;
     private float inverseTime;
@@ -69,7 +70,7 @@ public class PlayerControllerSimple : MonoBehaviour
     {
         float sqrRemainingDistance = (transform.position - end).sqrMagnitude;
 
-        while (sqrRemainingDistance > 0.1)
+        while (sqrRemainingDistance > 0.00001)
         {
             Vector3 newPosition = Vector3.MoveTowards(transform.position, end, inverseTime * Time.deltaTime);
             rb.MovePosition(newPosition);
@@ -79,12 +80,17 @@ public class PlayerControllerSimple : MonoBehaviour
 
         Vector3 cp = transform.position;
         transform.position = new Vector3(Mathf.Round(cp.x), cp.y, Mathf.Round(cp.z));
+        animator.SetBool("isWalking", false);
     }
     protected void move(int xDir, int yDir, int zDir)
     {
+        animator.SetBool("isWalking", true);
         Vector3 start = transform.position;
 
         Vector3 end = start + new Vector3(xDir, yDir, zDir);
+        Vector3 lookAtThis = start - new Vector3(xDir, yDir, zDir);
+
+        transform.LookAt(lookAtThis);
 		
 
         StartCoroutine(SmoothMovement(end));
