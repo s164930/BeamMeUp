@@ -10,7 +10,7 @@ public class StartBlock : MonoBehaviour
     // Start is called before the first frame update
     void Awake(){
         grid = transform.parent;
-        Instantiate(player, transform.position + new Vector3(0,1f,0), player.transform.rotation, grid);    
+        SpawnPlayer();    
     }
 
     public void SpawnPlayer(){

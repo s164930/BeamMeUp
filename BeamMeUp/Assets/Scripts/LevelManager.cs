@@ -24,8 +24,8 @@ public class LevelManager : MonoBehaviour
         points++;
         if(points >= pointsToWin){
             Debug.Log("You have won");
-            int scene = SceneManager.GetSceneByName("MainMenu").buildIndex;
-            sceneFader.ChangeScene(scene);
+            //int scene = SceneManager.GetSceneByName("MainMenu").buildIndex;
+            sceneFader.ChangeScene("MainMenu");
             return;
         }
         startBlock.GetComponent<StartBlock>().SpawnPlayer();

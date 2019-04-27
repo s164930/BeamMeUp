@@ -13,7 +13,7 @@ public class SceneFader : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    public void ChangeScene(int scene)
+    public void ChangeScene(string scene)
     {
         StartCoroutine(FadeOut(scene));
     }
@@ -30,7 +30,7 @@ public class SceneFader : MonoBehaviour
         }
     }
 
-    IEnumerator FadeOut(int scene)
+    IEnumerator FadeOut(string scene)
     {
         float t = 0f;
 
