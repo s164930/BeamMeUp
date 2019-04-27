@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveTime: 0.1
   groundCheck: {fileID: 6827211906405751051}
+  levelManager: {fileID: 0}
 --- !u!54 &7259194674679511172
 Rigidbody:
   m_ObjectHideFlags: 0

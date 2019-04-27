@@ -7,10 +7,6 @@ public class CameraController : MonoBehaviour
 {
     public CinemachineFreeLook freeLookCamera;
     // Start is called before the first frame update
-    void Start(){
-        freeLookCamera.m_LookAt = GameObject.FindGameObjectWithTag("Player").transform;
-        freeLookCamera.m_Follow = GameObject.FindGameObjectWithTag("Player").transform;
-    }
 
     // Update is called once per frame
     void Update()
@@ -20,4 +16,6 @@ public class CameraController : MonoBehaviour
             freeLookCamera.m_XAxis.Value = mouseMovement;
         }
     }
+
+    
 }
