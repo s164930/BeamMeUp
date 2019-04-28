@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EndBlock
   - StartBlock
+  - Point
   layers:
   - Default
   - TransparentFX
